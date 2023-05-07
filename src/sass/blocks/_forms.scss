@@ -1,0 +1,22 @@
+.feed-form {
+    width: 303px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    input {
+        height: 54px;
+        background: #FFFFFF;
+        margin-top: 12px;
+        border-radius: 5px;
+        border: 0;
+        padding-left: 20px;
+        font-family: 'Museo Moderno', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        color: #4B4B4B;
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+}
