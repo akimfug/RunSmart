@@ -67,4 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
 			toggleActiveTabsContent(Math.floor(i/2)); // как это работает: нужно делить нацело на 2 чтобы оно считало попорядку кнопки, иначе оно скачет
 		});
 	});
+
+	//
+
+	let databuttons = document.querySelectorAll('[data-modal="consultation"]'),
+		overlay = document.querySelector('.overlay'),
+		consultation = document.querySelector('#consultation');
+	console.log(databuttons);
+
+	databuttons.forEach(item => {
+		console.log(item)
+		item.addEventListener('click', () => {
+			console.log(overlay);
+			overlay.style.position = "fixed",
+			consultation.style.display = "block"
+		});
+	})
 });

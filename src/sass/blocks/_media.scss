@@ -1,25 +1,46 @@
 @media (max-width: 992px) {
+    .advantages {
+        &___items {
+            flex-direction: column;
+            align-items: center;
+            .title {
+                margin-top: 20px;
+            }
+            .subtitle {
+                margin-top: 8px;
+            }
+        }
+        &__item {
+            margin-bottom: 35px;
+        }
+    }
     .promo__wrapper {
         align-items: center
-    }
-    .advantages__items {
-        flex-direction: column;
-        align-items: center
-    }
-    .advantages__item {
-        margin-bottom: 35px;
-    }
-    .advantages__items .title {
-        margin-top: 20px;
-    }
-    .advantages__items .subtitle {
-        margin-top: 8px;
     }
     .consultation .container {
         padding-left: 30px;
     }
 }
 @media (max-width: 768px) {
+    .feedback {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 600px;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        &__descr {
+            margin-top: 20px;
+        }
+    }
     .promo__subheader {
         margin-top: 10px;
     }
@@ -36,34 +57,14 @@
         flex-direction: column;
         margin-top: 30px;
     }
+    .catalog__tab {
+        margin-bottom: 12px;
+    }
     .carousel .slick-dots {
         flex-direction: column;
         align-items: center;
     }
-    .catalog__tab {
-        margin-bottom: 12px;
-    }
-
-    .feedback .feedback__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
-    .feedback .feedback__info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 600px;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    .feedback .feedback__descr {
-        margin-top: 20px;
-    }
 }
-
-
 @media (max-width: 568px) {
     .carousel {
         padding: 40px 0px;
@@ -87,6 +88,4 @@
     .promo__subheader {
         font-size: 21px;
     }
-    
-
 }
