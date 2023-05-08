@@ -8,6 +8,9 @@
     max-width: 950px;
     margin: 0 auto;
 }
+ol, ul, li {
+    padding: 0
+}
 
 @import 'blocks/titles';
 @import 'blocks/promo';
@@ -17,4 +20,5 @@
 @import 'blocks/media';
 @import 'blocks/consultation';
 @import 'blocks/forms';
-@import 'blocks/carousel'
+@import 'blocks/carousel';
+@import 'blocks/catalog';
