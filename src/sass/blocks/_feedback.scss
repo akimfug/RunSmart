@@ -1,0 +1,48 @@
+.feedback {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+    &__header {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0D0D0D;
+    }
+    &__item {
+        display: flex;
+        margin-top: 60px;
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+    }
+    &__info {
+        margin-left: 60px;
+    }
+    &__nick {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #0D0D0D;
+    }
+    &__achive {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #646464;
+    }
+    &__descr {
+        font-family: 'Museo Moderno', sans-serif;
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0D0D0D;
+    }
+}

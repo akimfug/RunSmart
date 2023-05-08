@@ -21,4 +21,25 @@
         left: auto;
         right: -66px;
     }
+    .slick-dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+
+        li button{
+            font-family: 'Museo Moderno', sans-serif;
+            background: linear-gradient($main_color, #fa6666);
+            color: #fff;
+            margin: 0 2px;
+            border-radius: 10px;
+            width: 100px;
+            border: 2px solid #ffffff;
+            transition: 0.6s all;
+            &:hover {
+                width: 110px;
+            }
+        }
+        
+    }
 }

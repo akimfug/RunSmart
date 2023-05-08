@@ -22,22 +22,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	let tabsButtons = document.querySelectorAll('.catalog__tab');
 	let activeClass = 'catalog__tab' + '_active';
-	let catalogItem = document.querySelector('.catalog__content');
+	let catalogItems = document.querySelectorAll('.catalog__content');
 	function addActiveToTab (tabs, active) {
-		tabs.forEach(item => {
+		tabs.forEach((item, i) => {
 			item.addEventListener('click', () => {
 				removeActiveToTabs(tabs, active);
-				item.classList.add(activeClass);
-
-				catalogItem.classList.add('catalog__content_active');
+				item.classList.add(activeClass);	
+				removeActiceToTabsContent(catalogItems, 'catalog__content_active')
+				catalogItems[i].classList.add('catalog__content_active');
 			});
 			
 		});
 	}
-
+	function removeActiceToTabsContent (tabsContent, active) {
+		tabsContent.forEach((tab) => {
+			tab.classList.remove(active)
+		});
+		
+	}
 	function removeActiveToTabs (tabs, active) {
 		tabs.forEach(item => {
 			item.classList.remove(active);
+
 		}); 
 	}
 
