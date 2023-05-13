@@ -1,4 +1,7 @@
+@import 'libs/slick';
+@import 'blocks/titles';
 @import 'base/variables';
+@import 'libs/bootstrap-reboot.min.scss';
 
 * {
     font-family: 'Museo Sans', 'Museo Moderno' sans-serif;
@@ -25,3 +28,5 @@ ol, ul, li {
 @import 'blocks/feedback';
 @import 'blocks/footer';
 @import 'blocks/overlay';
+@import 'blocks/pageup';
+@import 'blocks/animations'

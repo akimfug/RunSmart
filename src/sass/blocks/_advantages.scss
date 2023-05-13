@@ -22,5 +22,16 @@
 
     &__item {
         width: 277px;
+        &:nth-child(2) {
+            // animation: heartbeat 2s ease infinite;
+        }
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 2s ease infinite;
+            &:hover {
+                animation: paused;
+            }
+        }
     }
 }

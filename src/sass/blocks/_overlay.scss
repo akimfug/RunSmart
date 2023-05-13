@@ -10,13 +10,17 @@
     align-items: center;
     width: 380px;
     min-height: 400px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #F2F2F2;
-    padding: 35px 62px 40px 62px;
+    padding: 34px 0 39px 0;
     text-align: center;
+    .feed-form {
+        padding: 0px 39px;
+        width: 100%;
+    }
     &__close {
         position: absolute;
         top: 0;
@@ -29,7 +33,7 @@
     &__subtitle {
         font-family: 'Museo Moderno', sans-serif;
         color: #0d0d0d;
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 700;
         text-align: center;
         
@@ -37,16 +41,27 @@
     &__descr {
         font-family: 'Museo Moderno', sans-serif;
         font-style: normal;
-        margin-top: 10px;
+        width: 250px;
         font-weight: 700;
         font-size: 14px;
         line-height: 14px;
         line-height: 22px;
         text-align: center;
         color: #0D0D0D;
+        margin: 0 auto;
+        margin-top: 10px;
+        line-height: 22px;
     }
     &_mini {
         min-height: 140px;
+    }
+    .error {
+        border: 1px solid red
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-top: 5px;
     }
 }
 
